@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Short URL</title>
+    <link rel="stylesheet" href="customIndex.css">
+    <script src="onClick.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="wrap_to_center">
+        <h1 class="page_title">Web service short url</h1>
+        <form class="url_form">
+            <input class="url_field" id="id_url_field" placeholder="Paste your link to get a short version" type="url">
+            <input type="button" class="get_short_url" id="id_get_short_url" value="Reduce" onmousedown="viewField()"/>
+            <div class="wrapper_short_url_field" id="id_wrapper_short_url_field">
+                <p><input class="short_url_field" placeholder="Short link" type="url" readonly>
+                    <button class="copy_short_url"><img class="img_icon_copy" src="/images/icon_copy.png" alt=""></button>
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
