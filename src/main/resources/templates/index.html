@@ -15,8 +15,8 @@
             <input class="url_field" id="id_url_field" placeholder="Paste your link to get a short version" type="url">
             <input type="button" class="get_short_url" id="id_get_short_url" value="Reduce" onmousedown="viewField()"/>
             <div class="wrapper_short_url_field" id="id_wrapper_short_url_field">
-                <p><input class="short_url_field" placeholder="Short link" type="url" readonly>
-                    <button class="copy_short_url"><img class="img_icon_copy" src="/images/icon_copy.png" alt=""></button>
+                <p><input class="short_url_field" id="id_short_url_field" placeholder="Short link" type="url" readonly>
+                    <button class="copy_short_url" id="id_copy_short_url" onclick="copyToClipboard()"><img class="img_icon_copy" src="/images/icon_copy.png" alt=""></button>
                 </p>
             </div>
         </form>
