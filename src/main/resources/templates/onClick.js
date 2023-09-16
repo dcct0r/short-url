@@ -22,7 +22,7 @@ function copyToClipboard() {
     const copyText = document.getElementById("id_short_url_field");
 
     copyText.select();
-    copyText.setSelectionRange(0, 99999); // For mobile devices
+    copyText.setSelectionRange(0, 99999);
 
     navigator.clipboard.writeText(copyText.value).then(r => console.log("error"));
 }
