@@ -1,6 +1,7 @@
 function viewField() {
-    const onAcceptButton = document.getElementById("id_wrapper_short_url_field");
+    const shortUrlFieldBlock = document.getElementById("id_wrapper_short_url_field");
     const urlField = document.getElementById("id_url_field");
+    const buttonReduce = document.getElementById("id_get_short_url");
 
     if(!urlField.checkValidity()) {
         alert("Wrong link");
@@ -10,11 +11,13 @@ function viewField() {
         urlField.value = "";
     }
 
-    if (onAcceptButton.style.visibility !== "visible" && urlField.checkValidity() && urlField.value !== "") {
-        onAcceptButton.style.visibility="visible";
-        urlField.value = "";
+    if(shortUrlFieldBlock.style.visibility !== "visible" && urlField.checkValidity() && urlField.value !== "") {
+        shortUrlFieldBlock.style.visibility = "visible";
+        buttonReduce.disabled = true;
+        urlField.setAttribute('readonly', 'readonly');
     } else {
-        onAcceptButton.style.visibility="hidden";
+        shortUrlFieldBlock.style.visibility = "hidden";
+        buttonReduce.disabled = false;
     }
 }
 

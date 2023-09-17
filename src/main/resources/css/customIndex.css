@@ -81,10 +81,6 @@ body {
     border-bottom-right-radius: 20px;
 }
 
-.img_icon_copy {
-    transition: 0.25s;
-}
-
 .img_icon_copy:hover {
     cursor: pointer;
     transform: scale(1.05);
