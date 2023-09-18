@@ -4,6 +4,7 @@ Web UI
 :--------:
 ![image](https://github.com/dcct0r/short-url/assets/111187206/47bb690a-d8b4-4967-9959-0802ff0dfc2d)
 
+## Required dependecies
 ```gradle
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
