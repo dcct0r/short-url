@@ -12,8 +12,8 @@
     <div class="wrap_to_center">
         <h1 class="page_title">Web service short url</h1>
         <div>
-            <form class="url_form" th:action="@{/}" method="post">
-                <input class="url_field" id="id_url_field" placeholder="Paste your link to get a short version" type="url">
+            <form class="url_form" action="/" method="post">
+                <input type="text" name="originalUrl" class="url_field" id="id_url_field" placeholder="Paste your link to get a short version">
                 <input type="button" class="get_short_url" id="id_get_short_url" value="Reduce" onmousedown="viewField()"/>
             </form>
 
