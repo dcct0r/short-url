@@ -2,7 +2,9 @@
 
 |Original link| Shortened url|
 |-----------|--------|
- ![](https://github.com/dcct0r/short-url/assets/111187206/c7e8c90b-2d3b-4d52-a601-2d50dd801f94) | ![](https://github.com/dcct0r/short-url/assets/111187206/5fce31fa-b327-4e1a-bb4e-d843afac1ffc)
+ ![](https://github.com/dcct0r/short-url/assets/111187206/f11522ab-cbbe-4b51-bca1-a5179cbf8c78) | ![image](https://github.com/dcct0r/short-url/assets/111187206/2fa26ce9-3e53-4e64-98e0-c5fb6a1a843c)
+
+
 
 
 
