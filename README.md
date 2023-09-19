@@ -1,8 +1,12 @@
 # Web service short url
 
-Web UI
-:--------:
-![image](https://github.com/dcct0r/short-url/assets/111187206/47bb690a-d8b4-4967-9959-0802ff0dfc2d)
+|Original link| Shortened url|
+|-----------|--------|
+ ![](https://github.com/dcct0r/short-url/assets/111187206/f11522ab-cbbe-4b51-bca1-a5179cbf8c78) | ![image](https://github.com/dcct0r/short-url/assets/111187206/2fa26ce9-3e53-4e64-98e0-c5fb6a1a843c)
+
+
+
+
 
 ## Required dependecies
 ```gradle
