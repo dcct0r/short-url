@@ -1,16 +1,9 @@
 # Web service short url
 
-<table>
-	<tbody>
-		<tr>
-			<td colspan="2" align="center">Web UI</td>
-		</tr>
-		<tr>
-			<td><img src="https://github.com/dcct0r/short-url/assets/111187206/31f062de-7a8e-48e0-8e9f-532252e2e7f5"></td>
-			<td> <img src="https://github.com/dcct0r/short-url/assets/111187206/47bb690a-d8b4-4967-9959-0802ff0dfc2d"</td>
-		</tr>
-	</tbody>
-</table>
+|Original link| Shortened url|
+|-----------|--------|
+ ![](https://github.com/dcct0r/short-url/assets/111187206/c7e8c90b-2d3b-4d52-a601-2d50dd801f94) | ![](https://github.com/dcct0r/short-url/assets/111187206/5fce31fa-b327-4e1a-bb4e-d843afac1ffc)
+
 
 
 ## Required dependecies
