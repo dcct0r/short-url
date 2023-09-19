@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Short URL</title>
-    <link rel="stylesheet" href="/css/customIndex.css">
+    <link rel="stylesheet" type="text/css" href="/css/customIndex.css">
     <script src="/js/onClick.js"></script>
 
 </head>
@@ -11,18 +11,25 @@
 <div class="wrapper">
     <div class="wrap_to_center">
         <h1 class="page_title">Web service short url</h1>
-        <form class="url_form">
-            <input class="url_field" id="id_url_field" placeholder="Paste your link to get a short version" type="url">
-            <input type="button" class="get_short_url" id="id_get_short_url" value="Reduce" onmousedown="viewField()"/>
-            <div class="wrapper_short_url_field" id="id_wrapper_short_url_field">
-                <p>
-                    <input class="short_url_field" id="id_short_url_field" placeholder="Short link" type="url" readonly>
-                    <button class="copy_short_url" id="id_copy_short_url" onclick="copyToClipboard()">
-                        <img class="img_icon_copy" id="id_img_icon_copy" src="/images/icon_copy.png" alt="">
-                    </button>
-                </p>
-            </div>
-        </form>
+        <div>
+            <form class="url_form" th:action="@{/}" method="post">
+                <input class="url_field" id="id_url_field" placeholder="Paste your link to get a short version" type="url">
+                <input type="button" class="get_short_url" id="id_get_short_url" value="Reduce" onmousedown="viewField()"/>
+            </form>
+
+            <form class="short_url_form" method="get">
+                <div class="wrapper_short_url_field" id="id_wrapper_short_url_field">
+                    <p>
+                        <input class="short_url_field" id="id_short_url_field" placeholder="Short link"
+                               type="url" th:value="${shortUrl}" readonly>
+                        <button class="copy_short_url" id="id_copy_short_url" onclick="copyToClipboard()">
+                            <img class="img_icon_copy" id="id_img_icon_copy" src="/images/icon_copy.png" alt="">
+                        </button>
+                    </p>
+                </div>
+            </form>
+        </div>
+
     </div>
 </div>
 </body>

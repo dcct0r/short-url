@@ -2,7 +2,6 @@ body {
     background: #384B52;
 }
 
-
 .wrap_to_center {
     display: flex;
     flex-direction: column;
@@ -49,7 +48,6 @@ body {
     background: #FCEDB2;
     cursor: pointer;
 }
-
 
 .wrapper_short_url_field {
     width: 320px;
