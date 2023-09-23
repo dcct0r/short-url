@@ -11,9 +11,12 @@
 ## Required dependecies
 ```gradle
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-tomcat:3.1.3'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc:3.1.3'
+    implementation 'org.postgresql:postgresql:42.5.4'
     implementation 'org.apache.commons:commons-lang3:3.12.0'
     implementation 'com.google.guava:guava:32.1.2-jre'
     compileOnly 'org.projectlombok:lombok'
