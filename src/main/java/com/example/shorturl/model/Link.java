@@ -8,10 +8,10 @@ import jakarta.persistence.*;
 public class Link {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "original_url")
+    @Column(name = "original_url", columnDefinition = "text", length = 1024)
     private String originalLink;
     @Column(name = "shortened_url")
     private String shortenedLink;
@@ -27,19 +27,19 @@ public class Link {
         this.shortenedLink = shortenedLink;
     }
 
-    public String getOriginalLink() {
-        return originalLink;
-    }
-
     public void setOriginalLink(String originalLink) {
         this.originalLink = originalLink;
     }
 
-    public String getShortenedLink() {
-        return shortenedLink;
+    public String getOriginalLink() {
+        return originalLink;
     }
 
     public void setShortenedLink(String shortenedLink) {
         this.shortenedLink = shortenedLink;
+    }
+
+    public String getShortenedLink() {
+        return shortenedLink;
     }
 }

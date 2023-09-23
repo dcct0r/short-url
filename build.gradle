@@ -30,6 +30,7 @@ dependencies {
     implementation 'org.postgresql:postgresql:42.5.4'
     implementation 'org.apache.commons:commons-lang3:3.12.0'
     implementation 'com.google.guava:guava:32.1.2-jre'
+    implementation 'commons-validator:commons-validator:1.7'
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'org.postgresql:postgresql'
     annotationProcessor 'org.projectlombok:lombok'

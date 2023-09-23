@@ -14,14 +14,14 @@
         <div>
             <form class="url_form" action="/" method="post">
                 <input type="text" name="originalUrl" class="url_field" id="id_url_field" placeholder="Paste your link to get a short version">
-                <input type="button" class="get_short_url" id="id_get_short_url" value="Reduce" onmousedown="viewField()"/>
+                <input type="submit" class="get_short_url" id="id_get_short_url" value="Reduce" onmousedown="viewField()"/>
             </form>
 
             <form class="short_url_form" method="get">
                 <div class="wrapper_short_url_field" id="id_wrapper_short_url_field">
                     <p>
                         <input class="short_url_field" id="id_short_url_field" placeholder="Short link"
-                               type="url" th:value="${shortUrl}" readonly>
+                               type="text" th:value="${shortUrl}" readonly>
                         <button class="copy_short_url" id="id_copy_short_url" onclick="copyToClipboard()">
                             <img class="img_icon_copy" id="id_img_icon_copy" src="/images/icon_copy.png" alt="">
                         </button>
