@@ -1,7 +1,20 @@
 package com.example.shorturl.model;
 
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "short_url")
 public class Link {
-    private String originalLink, shortenedLink;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+
+    @Column(name = "original_url")
+    private String originalLink;
+    @Column(name = "shortened_url")
+    private String shortenedLink;
 
     public Link() {}
 
