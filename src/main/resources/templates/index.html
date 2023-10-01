@@ -13,8 +13,10 @@
         <h1 class="page_title">Web service short url</h1>
         <div>
             <form class="url_form" action="/" method="post">
-                <input type="text" name="originalUrl" class="url_field" id="id_url_field" placeholder="Paste your link to get a short version">
-                <input type="submit" class="get_short_url" id="id_get_short_url" value="Reduce" onmousedown="viewField()"/>
+                <input type="text" name="originalUrl" class="url_field" id="id_url_field"
+                       placeholder="Paste your link to get a short version"
+                onchange="">
+                <input type="button" class="get_short_url" id="id_get_short_url" value="Reduce" onmousedown="viewField()"/>
             </form>
 
             <form class="short_url_form" method="get">

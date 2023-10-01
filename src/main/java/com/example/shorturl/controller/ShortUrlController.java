@@ -1,5 +1,6 @@
 package com.example.shorturl.controller;
 
+import com.example.shorturl.model.ErrorResponseDto;
 import com.example.shorturl.model.Link;
 import com.example.shorturl.model.LinkDto;
 import com.example.shorturl.service.UrlService;
@@ -26,16 +27,21 @@ public class ShortUrlController {
             LinkDto linkDto = new LinkDto();
             linkDto.setOriginalUrl(link.getOriginalLink());
             linkDto.setShortenedUrl(link.getShortenedLink());
-            model.addAttribute("shortUrl", linkDto.getShortenedUrl());
+            model.addAttribute("shortUrl", "linkDto.getShortenedUrl()");
             return new ResponseEntity<>(linkDto, HttpStatus.OK);
-        }
-        return null;
+        } else return new ResponseEntity<>(new ErrorResponseDto(HttpStatus.NOT_FOUND.value(), "Link not found"),
+                HttpStatus.NOT_FOUND);
     }
 
     @GetMapping("/{shortUrl}")
     public ResponseEntity<?> redirectToOriginalUrl(@PathVariable String shortUrl, HttpServletResponse response) throws IOException {
 
         Link link = urlService.getEncodedShortLink(shortUrl);
+
+        if(shortUrl.isEmpty() || link == null)
+            return new ResponseEntity<>(new ErrorResponseDto(HttpStatus.NOT_FOUND.value(), "Link not found"),
+                    HttpStatus.NOT_FOUND);
+
         response.sendRedirect(link.getOriginalLink());
 
         return null;
