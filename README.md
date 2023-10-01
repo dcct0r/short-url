@@ -1,18 +1,15 @@
 ## 🔗Web service short url
 
-### 👉 Endpoints
-- Copy the generated link and paste it to go to the original link
-```
-/{shortUrl}
-```
-
 |Original link| Shortened url|
 |-----------|--------|
  ![](https://github.com/dcct0r/short-url/assets/111187206/f11522ab-cbbe-4b51-bca1-a5179cbf8c78) | ![image](https://github.com/dcct0r/short-url/assets/111187206/2fa26ce9-3e53-4e64-98e0-c5fb6a1a843c)
 
 
-
-
+### 👉 Endpoints
+- Copy the generated link and paste it to go to the original link
+```
+/{shortUrl}
+```
 
 ## Required dependecies
 ```gradle
